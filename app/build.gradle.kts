@@ -72,6 +72,8 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
+    implementation(libs.androidx.navigation.compose)
+
     //Room
     implementation (libs.androidx.room.runtime)
     annotationProcessor (libs.androidx.room.compiler)
