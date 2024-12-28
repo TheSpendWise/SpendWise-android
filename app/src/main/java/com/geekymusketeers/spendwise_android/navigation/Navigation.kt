@@ -87,23 +87,18 @@ fun BottomNavigation(
 
             val bottomNavItems = listOf(
                 BottomNavItem(
-                    name = "Vault",
-                    route = "vault_screen",
+                    name = "Home",
+                    route = Screens.HomeScreen.name,
                     icon = Icons.Default.Home
                 ),
-//                BottomNavItem(
-//                    name = "Browse",
-//                    route = "home_screen",
-//                    icon = ImageVector.vectorResource(id = R.drawable.browse)
-//                ),
                 BottomNavItem(
-                    name = "Tools",
-                    route = "tools_screen",
+                    name = "Stats",
+                    route = Screens.StatsScreen.name,
                     icon = Icons.Default.DateRange
                 ),
                 BottomNavItem(
-                    name = "Profile",
-                    route = "profile_screen",
+                    name = "Settings",
+                    route = Screens.SettingsScreen.name,
                     icon = Icons.Default.Settings
                 )
             )

@@ -55,7 +55,7 @@ fun SplashScreen(
                     .alpha(alphaAnimation.value)
                     .size(120.dp),
                 painter = painterResource(id = R.drawable.ic_launcher_foreground),
-                contentDescription = "uncrack_logo"
+                contentDescription = "spendwise_logo"
             )
         }
     }
