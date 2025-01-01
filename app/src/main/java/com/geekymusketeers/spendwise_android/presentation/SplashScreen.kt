@@ -19,10 +19,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.geekymusketeers.spendwise_android.R
+import com.geekymusketeers.spendwise_android.navigation.Screens
 
 @Composable
 fun SplashScreen(
+    navController: NavController,
     modifier: Modifier = Modifier
 ) {
 
@@ -41,6 +44,7 @@ fun SplashScreen(
         animation = true
 
         // Check if the user is new or old and navigate to diff screens
+        navController.navigate(Screens.OnboardingScreen.name)
     }
 
     Surface {

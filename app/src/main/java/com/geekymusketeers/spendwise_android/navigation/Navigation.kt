@@ -42,6 +42,7 @@ fun Navigation(
     val backStackEntry = navController.currentBackStackEntryAsState()
 
     val screenWithoutNavigationBar = listOf(
+        Screens.OnboardingScreen.name,
         Screens.AddReceiptScreen.name
     )
 
@@ -62,7 +63,9 @@ fun Navigation(
             startDestination = Screens.SplashScreen.name
         ) {
             composable(route = Screens.SplashScreen.name) {
-                SplashScreen()
+                SplashScreen(
+                    navController
+                )
             }
 
             composable(route = Screens.OnboardingScreen.name) {
